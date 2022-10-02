@@ -1,0 +1,76 @@
+.header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px;
+  border-style: solid;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #84a98c;
+  color: #2f3e46;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-right: 50px;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  margin-left: -36px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-button {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: solid;
+  border-radius: 15%;
+  color: #2f3e46;
+  text-decoration: none;
+  flex-shrink: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.15s;
+}
+
+.menu-button:hover {
+  opacity: 75%;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 600;
+}
+
+.menu-button:active {
+  opacity: 40%;
+  font-weight: bold;
+}
+
+.youtube-link {
+  margin-left: 10px;
+}
