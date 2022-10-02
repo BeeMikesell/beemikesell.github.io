@@ -1,132 +1,47 @@
-<!-- User should be able to sort works by whatever value they prefer (ie. year written, instrumentation, title a-z and z-y, etc.) -->
-
-
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="this is the website for composer and trumpet player Bradley Mikesell">
-		<meta name="author" content="Bradley Mikesell">
-		<meta name="keywords" content="composer, music, classical, instrumental, vocal, electronics">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"
-		<title>Bradley Mikesell</title>
+  <head>
+    <title>Bradley Mikesell – Works</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,200;1,400&family=Roboto:wght@100&display=swap" rel="stylesheet">
-		<style type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-		body {
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			height: 100%;
-			max-height: 100%;
-			font-family:font-family: 'Roboto', sans-serif; font-family: 'Roboto Mono', monospace;;
-			line-height: 1.5em;
-		}
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
-		#header {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100px;
-			overflow: hidden;
-			background: #2f3e46;
-			line-height: 0.5em;
-		}
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+  </head>
+  <!--Temporary styled body height to test header position-->
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <a class="name" href="index.html">Bradley Mikesell <small>(they/he)</small></a>
+        <p class="subtitle">Composer and Sound Designer</p>
+      </div>
+      <div class="right-section">
+        <a class="menu-button" href="index.html">Home</a>
+        <a class="menu-button" href="works.html">List of Works</a>
+        <!--<a class="menu-button" href="lessons.html">Lessons</a>-->
+        <a class="menu-button" href="contact.html">Contact Me</a>
+        <a class="menu-button" href="emissary.html">Emissary</a>
+      </div>
+    </div>
 
-		#logo {
-			padding:15px;
-			float:left;
-		}
+    <!--TEMPORARY BODY-->
+    <p>Score and part requests coming soon.</p>
+    <!--TEMPORARY BODY-->
 
-		main {
-			position: fixed;
-			top: 100px;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			overflow: auto;
-			background: #cad2c5;
-		}
-
-		.innertube {
-			margin: 20px;
-		}
-
-		p {
-			color: #cad2c5;
-		}
-
-		/* Menu */
-		nav {
-			margin:0 auto;
-			padding:0;
-			float:right;
-		}
-		nav ul {
-			list-style:none;
-			padding:0;
-			float:left;
-		}
-		nav ul li {
-			margin:0;
-			padding:0 0 0 50px;
-			float:left;
-		}
-		nav ul li a {
-			display:block;
-			margin:0;
-			padding:15px 20px;
-			color:#84a98c;
-			text-decoration:none;
-		}
-		nav ul li.active a, #top-nav ul li a:hover {
-			color:#cad2c5;
-		}
-
-		* html body{
-			padding: 100px 0 0 0;
-		}
-
-		* html main{
-			height: 100%;
-			width: 100%;
-		}
-
-		</style>
-
-	</head>
-
-	<body>
-
-		<header style="color: #84a98c"; id="header">
-			<div id="logo">
-				<h1>Bradley Mikesell<small><small> (they/he)</small></small></h1>
-				<h3><i>Composer, Trumpeter, and Sound Designer</i></h3>
-			</div>
-			<nav>
-				<div class="innertube">
-				<ul>
-					<li><a style= "padding: 10px; border: 2px solid #84a98c;" href="index.html">Home</a></li>
-					<li><a style= "padding: 10px; border: 2px solid #84a98c;" href="works.html">Works</a></li>
-					<li><a style= "padding: 10px; border: 2px solid #84a98c;" href="lessons.html">Lessons</a></li>
-					<li><a style= "padding: 10px; border: 2px solid #84a98c;" href="contact.html">Contact Me</a></li>
-					<li><a style= "padding: 10px; border: 2px solid #84a98c;" href="emissary.html"><i><b>EMISSARY</b></i></a></li>
-				</ul>
-				</div>
-			</nav>
-		</header>
-
-		<main style="color: #2f3e46">
-			<div class="innertube">
-
-				<h1 style="color: #2f3e46">List of Works</h1>
-				<p style="color: #2f3e46">Score and part requests coming soon!</p>
-
-			</div>
-		</main>
-
-	</body>
+    <div class="footer">
+      <div class="copyright-section">
+        <p>Copyright © 2022 Bradley Mikesell.</p>
+        <p class="website-hosting">Website hosted on <a href="https://github.com/bmikesell4/bmikesell4.github.io" target = "_blank"><img class="github-logo" src="icons/github-logo.png"></a></p>
+      </div>
+      <div class="social-section">
+        <a class="youtube-link" href="https://www.youtube.com/channel/UC0u84XAJ3qfX2lxElbCDYsA" target = "_blank"><img src="icons/youtube-logo.svg" width="70px"></a>
+        <a class="soundcloud-link" href="https://soundcloud.com/bradley-mikesell-ii" target = "_blank"><img src="icons/soundcloud-logo.svg" width="130px"></a>
+      </div>
+    </div>
+  </body>
 </html>
