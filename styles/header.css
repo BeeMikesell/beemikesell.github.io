@@ -63,7 +63,8 @@
   opacity: 75%;
   padding-left: 8px;
   padding-right: 8px;
-  font-weight: 600;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .menu-button:active {
