@@ -1,0 +1,14 @@
+p {
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+body {
+  margin: 0;
+  padding-top: 110px;
+  /*Temporary height for sticky header*/
+  height: 1000px;
+}
