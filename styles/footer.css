@@ -10,15 +10,15 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 14px;
-  background-color: #84a98c;
-  color: #2f3e46;
+  background-color: #272727b9;
+  color: #c2c2c2;
   position: fixed;
   bottom: 0px;
   left: 0px;
   right: 0px;
   border-top-width: 2px;
-  border-top-style: solild;
-  border-bottom-color: #2f3e46;
+  border-top-style: solid;
+  border-color: #272727f7;
 }
 
 .copyright-section {
@@ -50,6 +50,7 @@
   align-items: center;
   flex-direction: row;
   flex-shrink: 0;
+  padding-right: 15px;
 }
 
 .youtube-link {
@@ -62,17 +63,5 @@
 }
 
 .youtube-link:active {
-  opacity: 40%;
-}
-
-.soundcloud-link {
-  transition: 0.15s;
-}
-
-.soundcloud-link:hover {
-  opacity: 75%;
-}
-
-.soundcloud-link:active {
   opacity: 40%;
 }
