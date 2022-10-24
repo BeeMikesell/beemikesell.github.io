@@ -10,18 +10,22 @@
 }
 
 .intro1 {
-    transition: 0.3s;
+    transition: 0.15s;
+    font-size: 1.5em;
 }
 
 .intro1:hover {
     opacity: 75%;
-    font-size: 30px;
+    font-size: 2em;
     cursor: pointer;
 }
 
 .intro1, .intro2 {
-    font-size: 20px;
     margin: 25px;
+}
+
+.intro2 {
+    font-size: 1em;
 }
 
 .social-link {
