@@ -18,16 +18,17 @@
     cursor: pointer;
 }
 
-.intro1, .intro2 {
+.intro2 {
+    font-size: 1em;
+    margin: auto;
+}
+
+.headshot {
     margin: 25px;
 }
 
-.intro2 {
-    font-size: 1em;
-}
-
 .social-link {
-    margin: 10px;
+    margin: 25px;
     transition: 0.15s;
 }
 
