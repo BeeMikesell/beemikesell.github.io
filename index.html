@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,123 @@
   <title>Brianna Bee Mikesell | Composer</title>
 
   <link rel="stylesheet" href="styles.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">   
 </head>
-<body class="body">
-  <a class="intro1" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"target = "_blank">Hi!</a>
-    <p class="intro2">I'm <strong>Brianna Bee Mikesell</strong> <small>(she/her)</small>, a composer of electronic and acoustic music. I am currently renovating my website, so I encourage you to check out the links below in the interim.</p>
 
-    <img class="headshot" src="headshot-modified.png" alt="Headshot of Bee Mikesell in a winter landscape" height="300px">
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-    <div>
-      <a class="social-link" href="https://www.youtube.com/channel/UC0u84XAJ3qfX2lxElbCDYsA" target = "_blank"><img src="icons/youtube-icon.svg" height="40px"></a>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+    style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <h3 class="w3-padding-64 w3-center"><b>BRIANNA BEE<br>MIKESELL</b></h3>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large"><u>CLOSE
+        MENU</u></a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+    <a href="#music" onclick="w3_close()" class="w3-bar-item w3-button">MUSIC</a>
+    <a href="#lessons" onclick="w3_close()" class="w3-bar-item w3-button">LESSONS</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
 
-      <a class="social-link" href="https://soundcloud.com/beemikesell" target = "_blank"><img src="icons/soundcloud-icon.svg" height="40px"></a>
-    
-      <a class="social-link" href="https://github.com/beemikesell" target = "_blank"><img src="icons/github-icon.svg" height="40px"></a>
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+    <span class="w3-left w3-padding"><b>BRIANNA BEE MIKESELL</b></span>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- About section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+      <h4><b>ABOUT ME</b></h4>
+      <img src="/headshot-modified.png " alt="Me" class="w3-image w3-padding-32" width="300">
+      <div class="w3-content w3-justify" style="max-width:600px">
+        <p>Brianna Bee Mikesell (b. 1998) is a composer whose diverse body of work encompasses compositions for solo instruments, ensembles of varying sizes, and electronic music. Her works often intricately incorporate physical space, improvisational elements, and data sonification. A central focus of hers lies in leveraging live audio processing to enhance live performances. An embodiment of this interest is her ongoing project, "Emissary," an innovative web-based platform designed to facilitate interactive real-time collaborations between musicians and electronics.</p>
+
+        <p>Her music has been performed by numerous groups such as The Florida Orchestra, loadbang, Transient Canvas, Quasar Saxophone Quartet, Corvus, and other notable groups. She was a finalist in the 2021 Morton Gould Young Composer Awards and has won various other call-for-score competitions such as the 2021 Penn State Chamber Winds Call for Scores, performances with The Florida Orchestra in both 2017 and 2020, the 2018 Terroir New Music Call for Scores, among others.</p>
+
+        <p>In 2022, she received a Master of Music degree in Music Composition from Penn State University from under Dr. Baljinder Sekhon and Dr. Sarah Genevieve Burghart Rice. She also holds a Bachelor of Music degree in Acoustic and Electronic Music Composition at the University of South Florida.</p>
+      </div>
     </div>
+  </div>
+
+  <!-- Music section -->
+  <div class="w3-container w3-light-grey w3-center w3-padding-32" id="music">
+    <h4><b>MUSIC</b></h4>
+    <div class="w3-content w3-justify" style="max-width:600px">
+      COMING SOON
+    </div>
+  </div>
+
+  <!-- Music section -->
+  <div class="w3-container w3-light-grey w3-center w3-padding-32" id="music">
+    <h4><b>LESSONS</b></h4>
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <p>COMING SOON</p>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>CONTACT ME</b></h4>
+      <p>Please fill out the form below and I will get back to you as soon as I can.</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-black w3-center w3-padding-24">
+    <a class="social-link" href="https://www.youtube.com/channel/UC0u84XAJ3qfX2lxElbCDYsA" target="_blank"><img
+        src="icons/youtube-icon.svg" height="40px"></a>
+
+    <a class="social-link" href="https://soundcloud.com/beemikesell" target="_blank"><img
+        src="icons/soundcloud-icon.svg" height="40px"></a>
+
+    <a class="social-link" href="https://github.com/beemikesell" target="_blank"><img src="icons/github-icon.svg"
+        height="40px"></a>
+  </footer>
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
 </body>
+
 </html>
